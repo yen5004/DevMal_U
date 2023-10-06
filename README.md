@@ -1,2 +1,3 @@
 # DevMal_U
-file development for development
+file storage for development
+using the repo for practicing coding
