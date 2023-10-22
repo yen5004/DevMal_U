@@ -1,0 +1,8 @@
+#! /bin/bash
+#Simple count up timer that shows seconds
+
+start=$(date +%s)
+while true; do
+    time="$(($(date +%s) - $start))"
+    printf '%s\r' "$(date -u -d "@$time" +%H:%M:%S)"
+done
