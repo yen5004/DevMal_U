@@ -1,0 +1,13 @@
+#! /bin/bash
+#Program to get users name after running enum4linux -U 
+#save this output to a file and run this to extract user name
+
+echo "is file path to doc and file names users.txt?"
+#set path to file
+file= "~/Documents"
+
+echo "Using default settings, script starting"
+
+ cut -d [ -f2 ./users.txt | cut -d] -f1
+
+echo "Script finished"
